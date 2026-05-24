@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "src": "/tma", "dest": "/tma.html" },
+    { "src": "/dashboard", "dest": "/dashboard.html" }
+  ]
+}
