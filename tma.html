@@ -418,6 +418,9 @@
   <!-- SCREEN 3: SERVICE DETAIL                   -->
   <!-- ══════════════════════════════════════════ -->
   <div class="screen" id="screen-service-detail">
+    <div style="padding:14px 16px 0;flex-shrink:0;">
+      <button onclick="goBack()" style="background:none;border:none;color:var(--hint);font-size:15px;cursor:pointer;padding:4px 0;min-height:44px;display:flex;align-items:center;gap:4px;">← Назад</button>
+    </div>
     <div style="flex:1;overflow-y:auto;" class="screen-no-tab screen-padded" id="service-detail-body">
       <!-- filled by JS -->
     </div>
@@ -932,7 +935,7 @@ function openServiceDetail(id) {
     </div>
     <div style="font-size:22px;font-weight:700;color:var(--accent);text-align:center;margin-bottom:20px;">${s.price}</div>
     <div class="card" style="margin-bottom:14px;">
-      <p style="font-size:14px;color:var(--hint);line-height:1.6;">${s.fullDesc}</p>
+      <p style="font-size:14px;color:var(--text);line-height:1.6;">${s.fullDesc}</p>
     </div>
     <div class="case-card" style="margin-bottom:14px;">
       <div style="font-size:14px;font-weight:600;">💡 ${s.hook}</div>
